@@ -40,7 +40,7 @@ body{
 }
 
 .panel.active{
-    flex:2;
+    flex:1;
 }
 
 .panel.active h3{
