@@ -48,7 +48,7 @@ body {
     background: transparent;
     border: 0;
     font-size: 26px;
-    color: grey;
+    color: white;
 }
 
 .circle button:focus {
@@ -63,6 +63,10 @@ body {
     left: 55%;
     transform: rotate(90deg);
     transform-origin: top left;
+}
+
+.container.show-nav .circle {
+    transform: rotate(-75deg);
 }
 
 .container.show-nav+nav ul {
