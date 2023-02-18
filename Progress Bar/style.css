@@ -44,7 +44,7 @@ body {
     width: 100%;
     transform: translateY(-50%);
     z-index: -1;
-    transition: 1s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .progress {
@@ -56,7 +56,7 @@ body {
     width: 0%;
     transform: translateY(-50%);
     z-index: -1;
-    transition: 1s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .circle {
@@ -69,7 +69,7 @@ body {
     align-items: center;
     justify-content: center;
     border: 3px solid #e0e0e0;
-    transition: 1s ease-in-out 0.5s;
+    transition: 0.2s ease-in-out 0.1s;
 }
 
 .circle.active {
