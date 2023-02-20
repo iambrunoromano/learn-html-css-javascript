@@ -1,16 +1,16 @@
 const joke = document.getElementById('jokeEl')
 const jokeBtn = document.getElementById('jokeBtn')
 jokeBtn.addEventListener('click', getJoke)
+
 getJoke()
-function getJoke() {
+
+async function getJoke() {
     const callConfig = {
         headers: {
             'Accept': 'application/json'
         }
     }
-    fetch('https://icanhazdadjoke.com', callConfig)
-        .then(response => response.json())
-        .then((body) => {
-            joke.innerHTML = body.joke
-        })
+    const response = await fetch('https://icanhazdadjoke.com', callConfig)
+    const data = await response.json()
+    joke.innerHTML = data.joke
 }
